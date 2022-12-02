@@ -1,0 +1,367 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+ 
+
+:root {
+    --main-background-color:#8063ED;
+    --second-background-color:#a08bea;
+}
+
+
+body { 
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(to top, #e3def5 0%, #8063ED 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    background-position: fixed;
+    background-color: #FFEADD; 
+    color:black;
+}
+
+
+header {
+    width: 100%;
+    background-color: white; 
+    margin-bottom: 50px; 
+    width: 100%;         
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#logo {
+    display: block;
+    width: 180px;
+    padding-left: 20px;
+    
+}
+ 
+
+#navprincipale {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navconnexion {
+    display: block; 
+    justify-content: flex-end;
+
+}
+
+
+#menu {
+    display: none;
+}
+
+ion-icon {
+    font-size: 50px;
+    color: var(--main-background-color);
+}
+
+
+nav a {
+    font-size:1.1em;
+    text-decoration: none;
+    display: block;
+    color:black;
+}
+
+nav a:hover {
+    color:var(--main-background-color);
+}
+
+nav a:active {
+    color: var(--main-background-color);
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+
+.button {
+    background-color: var(--main-background-color);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block; 
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.button2 {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px; 
+    padding: 10px 15px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color:var(--second-background-color);
+    }
+
+.button2:hover {
+        background-color:var(--main-background-color) ;
+        }
+        
+
+section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: left; 
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+section ul {
+    font-size: 1.1em;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section ul li:before {
+    content: '✓';
+    color: white;
+    margin-right: 10px;
+  }
+
+section li {
+    padding-bottom: 20px;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+p {
+    color:black;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-top: 0.5em;
+
+}
+
+aside img {
+    height: 400px;
+    display: grid;
+}
+
+aside img {
+    height: 600px;
+}
+
+.navmobile {
+    
+    display: none;
+}
+
+#photo1 {
+    max-height: 500px;
+    margin: auto;
+    z-index: 0;
+}
+
+#photo2  {
+    display: none;
+}
+
+#bandeaupartenaires {
+    background-color: white;
+    width: 100%;
+    margin-top: 50px;
+    color: var(--main-background-color);
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bandeaupartenaires img {
+    max-width: 150px;
+    
+}
+
+#baseline h2 {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+#monogramme {
+    margin: auto;
+    width: 50px;
+    
+
+}
+footer { 
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    
+}
+
+footer h2 {
+    font-size: 1em;
+}
+
+
+footer p {
+    font-size: 0.5 em;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+
+
+/* Navigation petit écran */
+
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: auto;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    
+
+    .navmobile.responsive {
+        display: block;
+        font-size:1.8em;
+        background-color: white;
+        color: black;
+        position: relative;
+                }
+         
+    .navmobile.responsive ul {
+        list-style-type: none;
+        text-decoration: none;
+        text-align: left;
+    }
+
+    .navmobile.responsive a {
+        text-decoration: none;
+    }
+
+    .navmobile.responsive a:hover {
+        color:var(--main-background-color)
+    }
+
+    #logo {
+        padding-left: 5px;
+        display: block;
+        width: 100px;
+        
+    } 
+
+
+    
+
+    
+    #menu {
+        float: right;
+        display: block;
+      }
+
+    nav ul {
+        display: none;
+    }
+    
+  
+    
+     
+    /* Autres éléments */
+
+
+    section { 
+        width: 80%; 
+        margin: auto;        
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    
+    #buttons { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+    }
+
+    article button {
+        width: 100%;
+        margin-top: 5px;
+    }
+         
+    article ul {
+        font-size: 1em;
+    }
+    
+    article p {
+        font-size: 0.7em;
+    }
+
+    
+
+
+
+    
+}
+
+
+ 
+    
+  
+
+ 
